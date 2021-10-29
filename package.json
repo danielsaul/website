@@ -1,0 +1,17 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "erve": "vitepress serve ."
+  },
+  "devDependencies": {
+    "vitepress": "^0.20.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "tailwindcss": "^2.2.17"
+  }
+}
