@@ -1,5 +1,6 @@
 <script setup>
 import Sidebar from './Sidebar.vue'
+import ToggleDarkMode from './ToggleDarkMode.vue'
 import { useData } from 'vitepress'
 
 const { page } = useData()
@@ -10,6 +11,7 @@ const { page } = useData()
   <div class="flex flex-col sm:flex-row">
     <div>
       <Sidebar class="p-8 pt-12 sticky top-0" />
+      <ToggleDarkMode class="fixed m-8 top-0 right-0 sm:inset-auto sm:bottom-0 sm:left-0 z-10" />
     </div>
     <div class="p-8 pt-12">
       <div class="mb-8">
