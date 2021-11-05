@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-64 p-8">
+  <div class="flex flex-col w-64">
     <h1 class="text-xl font-serif pb-2">Daniel Saul</h1>
     <p class="text-sm pb-2">co-founder, leading product &amp; engineering at <a href="https://riskledger.com">risk ledger</a>.</p>
     <p class="text-sm pb-2">these are my musings.</p>
