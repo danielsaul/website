@@ -5,19 +5,23 @@ import { MoonIcon, SunIcon } from '@heroicons/vue/solid'
 
 const darkMode = ref(false)
 
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+let savedPreference = localStorage.getItem('theme')
+let systemThemeIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+if (savedPreference === 'dark' || (savedPreference === null && systemThemeIsDark) ) {
   darkMode.value = true
   document.documentElement.classList.add('dark')
+} else {
+    document.documentElement.classList.remove('dark')
 }
 
 function toggle() {
     if (darkMode.value) {
     darkMode.value = false
-    localStorage.theme = 'light'
+    localStorage.setItem('theme', 'light')
     document.documentElement.classList.remove('dark')
   } else {
     darkMode.value = true
-    localStorage.theme = 'dark'
+    localStorage.setItem('theme', 'dark')
     document.documentElement.classList.add('dark')
   }
 }
