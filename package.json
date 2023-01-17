@@ -8,7 +8,7 @@
     "erve": "vitepress serve ."
   },
   "devDependencies": {
-    "vitepress": "^0.20.0"
+    "vitepress": "1.0.0-alpha.38"
   },
   "dependencies": {
     "@heroicons/vue": "^1.0.5",
