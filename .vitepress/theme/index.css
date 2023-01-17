@@ -28,4 +28,12 @@
     display: none;
   }
 
+  /* Code blocks */
+  [class*='language-'] > span.lang {
+    display: none;
+  }
+  [class*='language-'] > button.copy {
+    display: none;
+  }
+
 }
